@@ -1,8 +1,8 @@
 <?php session_start();
-define('BDD_LOGIN', 'pinkman');
-define('BDD_PASSWORD', 'azertyuiop');
+define('BDD_LOGIN', 'roort');
+define('BDD_PASSWORD', 'root');
 define('BDD_SERVER', 'localhost');
-define('BDD_DATABASE', 'pinkman');
+define('BDD_DATABASE', 'database');
 
 function connexionBD()
 {
