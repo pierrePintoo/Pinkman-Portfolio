@@ -1,0 +1,8 @@
+AuthType Basic
+AuthBasicProvider file
+AuthName "Acces securise a mes TPs M2206"
+AuthUserFile "/home/mmi18f07/public_html/travaux/m2206/htpasswd"
+<RequireAny>
+	Require ip 195.83.128.43 194.199.63.200 194.199.63.199
+	Require valid-user
+</RequireAny>

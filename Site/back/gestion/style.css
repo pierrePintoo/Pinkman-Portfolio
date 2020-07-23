@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+body, html{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    margin: 0;
+}
+header{
+    position: relative;
+    height:12vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+    box-shadow: 0 -3px 10px black;
+    z-index: 2;
+    top:0;
+}
+#bloc_logo>h1{
+    font-weight: 400;
+    margin:0;
+    padding-left: 50px;
+    font-size:1.5vw;
+    position: relative;
+    cursor: pointer;
+    color:#132f3a;
+    transition:none;
+}
+
+.titre {
+    color: #132f3a;
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: 400;
+    padding-right: 50px;
+}
+
+.centrer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+
+.add-btn{
+    text-decoration: none;
+    position: relative;
+    display: block;
+    color: #132f3a;
+    padding: 2vw 4vw;
+    text-align: center;
+    font-weight: 500;
+    margin: 2vw 0;
+    width:20vw;
+    overflow: hidden;
+    border: #132f3a 3px solid;
+    transition: all 1s,left 0.5s;
+    left: 0;
+}
+
+.add-btn::before{
+    background: #132f3a ;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+.add-btn:hover{
+    color:white;
+}
+.add-btn--redfonce::before{ 
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.add-btn--redfonce:hover::before{
+    height: 500%;
+}
+footer{
+    background-color: #132f3a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    transform: translate(0,50%);
+    width: 100%;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+footer p{
+    color: white;
+    margin: 0;
+    font-size: 0.8em;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+footer #paypal{
+    height: 40px;
+    width:100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+footer:hover{
+    transform: translate(0);
+}
+
+#donate{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: all 1s;
+}
+#txt_donate{
+    color:#132f3a;
+    font-weight: 400;
+    font-size: 2em;
+    white-space: nowrap;
+    margin: 0;
+}
+.epais{
+    font-weight: 600;
+}
+.typed-cursor {
+    font-size: 2em;
+}
+#paypal_logo_princ{
+    height: 100px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.bloc_input{
+    opacity: 0;
+    height: auto;
+    left:100vw;
+    transition: all 1s,transform 0.1s;
+    transform: translate(0,0);
+}
+.bloc_input p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 960px) {
+    #bloc_logo h1{
+        font-size: 20px;
+        padding-left: 10vw;
+    }
+    .titre{
+        font-size: 13px;
+    }
+    header{
+        height:10vw;
+        box-shadow: 0 -3px 10px black;
+    }
+    .add-btn{
+        width:200px;
+        padding: 20px;
+        font-size: 13px;
+    }
+    .typed-cursor {
+        opacity: 0!important;
+    }
+    #txt_donate{
+        font-size: 3vw;
+        white-space: normal;
+        text-align: center;
+        width:90vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    h2{
+        display: none;
+    }
+    #txt_donate{
+        font-size: 20px;
+    }
+}
