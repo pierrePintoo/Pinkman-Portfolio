@@ -5,8 +5,8 @@ require '../session_verif_SD.php';
 class DB{
     // Database configuration
     private $dbHost     = "localhost";
-    private $dbUsername = "pinkman";
-    private $dbPassword = "azertyuiop";
+    private $dbUsername = "root";
+    private $dbPassword = "root";
     private $dbName     = "pinkman";
     private $imgTbl     = 'video';
     private $imgTbl2     = 'playlist';
